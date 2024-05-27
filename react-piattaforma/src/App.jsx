@@ -1,9 +1,10 @@
 import "./App.css";
+import Clock from "./components/Clock";
 
 import Counter from "./components/Counter";
 
 function App() {
-  return <Counter initialValue={0} handlerCounterIncrement={1}></Counter>;
+  return <Clock></Clock>;
 }
 
 export default App;
