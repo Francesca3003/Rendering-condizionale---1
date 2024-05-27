@@ -2,9 +2,10 @@ import "./App.css";
 import Clock from "./components/Clock";
 
 import Counter from "./components/Counter";
+import MouseClicker from "./components/MouseClicker";
 
 function App() {
-  return <Clock></Clock>;
+  return <MouseClicker></MouseClicker>;
 }
 
 export default App;
