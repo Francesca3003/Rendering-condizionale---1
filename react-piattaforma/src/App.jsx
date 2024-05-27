@@ -1,17 +1,9 @@
 import "./App.css";
-import AlertClock from "./components/AlertClock";
+
+import Counter from "./components/Counter";
 
 function App() {
-  const showAlertWithCurrentTime = () => {
-    const currentTime = new Date().toLocaleTimeString();
-    alert(`The current time is: ${currentTime}`);
-  };
-
-  return (
-    <div>
-      <AlertClock onClick={showAlertWithCurrentTime} />
-    </div>
-  );
+  return <Counter initialValue={0} handlerCounterIncrement={1}></Counter>;
 }
 
 export default App;
