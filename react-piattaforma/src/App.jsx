@@ -1,8 +1,17 @@
 import "./App.css";
-import Welcome from "./components/Welcome";
+import AlertClock from "./components/AlertClock";
 
 function App() {
-  return <Welcome name="John" age={29} />;
+  const showAlertWithCurrentTime = () => {
+    const currentTime = new Date().toLocaleTimeString();
+    alert(`The current time is: ${currentTime}`);
+  };
+
+  return (
+    <div>
+      <AlertClock onClick={showAlertWithCurrentTime} />
+    </div>
+  );
 }
 
 export default App;
